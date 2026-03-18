@@ -44,9 +44,27 @@ The single-item doc is usually organized as:
 - reusable checklist or template when useful
 - original source link
 
+## Install
+
+### Install from the packaged `.skill` file
+
+Download the latest `link-to-feishu-kb.skill` asset from the repository Releases page and import it into your AgentSkills/OpenClaw-compatible setup.
+
+### Install from source
+
+Copy the `skills/link-to-feishu-kb/` directory into your local skills directory if you prefer to develop or customize the skill manually.
+
+## Why this is agent-friendly
+
+- short `SKILL.md` that works as a map, not a wall of instructions
+- detailed guidance moved into `references/` for progressive disclosure
+- source handling is conservative and explicit
+- roundup/index maintenance is part of the default workflow, not an afterthought
+
 ## Repo layout
 
 ```text
+AGENTS.md
 skills/
   link-to-feishu-kb/
     SKILL.md
@@ -54,6 +72,8 @@ skills/
       workflow.md
       source-types.md
       github-skills-md.md
+dist/
+  link-to-feishu-kb.skill
 ```
 
 ## Notes
